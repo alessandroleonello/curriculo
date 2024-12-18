@@ -1,0 +1,266 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --preto: #262D3D;
+    --azul: #204ECF;
+    --cinza: #8D8D8D;
+}
+
+body{
+    font-family: "Montserrat", serif;
+
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 3em;
+}
+
+.cabecalho-titulo{
+    font-size: 72px;
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.cabecalho-imagem{
+    width: 119px;
+    border-radius: 50%;
+
+}
+
+.cabecalho-informacoes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho-itens__img{
+    margin: 0.5em;
+    width: 24px;
+}
+
+.cabecalho-itens__texto{
+    margin-right: 2em;
+    font-size: 18px;
+    color: var(--preto);
+}
+
+.separador{
+background-color: var(--azul);
+padding: 1em 5em;
+
+}
+
+.separador-texto{
+    color: white;
+    font-weight: 600;
+    
+}
+
+.principal{
+    display: flex;
+    align-items: top;
+    padding: 1em 3em;
+}
+
+.formacao-titulo, .experiencia-titulo{
+    color: var(--cinza) ;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.principal-formacao{
+    width: 70%;
+}
+
+.lista-formacao{
+    padding: 2em 0em;
+
+}
+
+.itens-formacao{
+    display: flex;
+    gap: 1em;
+}
+
+.itens-formacao-texto{
+    font-size: 20px;
+    color: var(--preto);
+    font-weight: 700;
+}
+
+.itens-formacao-ano, .intens-formacao-instituicao {
+    font-size: 18px;
+    color: var(--preto);
+    font-weight: 500;
+}
+
+.intens-formacao-instituicao{
+    margin-bottom: 4em;
+}
+
+.final {
+    margin-bottom: 0;
+}
+
+.itens-formacao-texto-cursos{
+    margin: 1em 2em;
+    border: 1px var(--azul) solid;
+    border-radius: 20px;
+    padding: 1em;
+    width: 20%;
+}
+
+.tecnologia{
+    padding: 0em 1em 1em 3em;
+}
+
+.itens-cursos{
+display: flex;
+flex-wrap: wrap;
+}
+
+.lista-experiencia{
+    list-style: none;
+}
+
+.itens-experiencia{
+    margin: 1.5em 0em;
+}
+
+.itens-experiencia-cargo{
+    font-size: 20px;
+    color: var(--preto);
+    font-weight: 700;
+}
+
+.itens-experiencia-instituicao{
+    font-size: 18px;
+}
+h2{
+    font-size: 20px;
+    color: var(--preto);
+    font-weight: 700;
+}
+
+h3{
+    font-size: 14px;
+    color: var(--preto);
+    font-weight: 500;
+}
+
+.premiacoes{
+    padding: 1em 1em 1em 4em;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1em;
+    justify-content: flex-start;  
+}
+
+.itens-premiacao{
+    border: 1px solid var(--azul);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+.rodape{
+    background-color: var(--azul);
+    text-align: center;
+    font-family: "Montserrat", serif;
+    color: white;
+    padding: 1em;
+}
+
+@media (max-width: 1000px) {
+body{
+    margin:0;
+    padding: 0;
+}
+    .cabecalho{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 1em;
+        margin: 0em;
+    }
+
+    .cabecalho-titulo{
+        font-size: 24px;
+    }
+
+    .cabecalho-informacoes{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .separador{
+        text-align: center;
+    }
+
+    .principal{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .principal-experiencia{
+        text-align: center;
+    }
+    .principal-formacao{
+        display: inline-block;
+        text-align: center;
+        width: auto;
+    }
+
+        .tecnologia{
+            text-align: center;
+        }
+
+    .itens-formacao-texto{
+margin: 0;    }
+
+    .itens-formacao{
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .itens-formacao-imagem{
+        display: none;
+    }
+
+    .intens-formacao-instituicao{
+        margin-bottom: 2em;
+    }
+
+    .lista-formacao{
+        margin: 0;
+        padding: 0;
+    }
+
+    .itens-cursos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: auto;
+    }
+
+    .itens-formacao-texto-cursos{
+        width: auto;
+    }
+
+    .premiacoes{
+        text-align: center;
+        justify-content: center;
+    }
+
+}
