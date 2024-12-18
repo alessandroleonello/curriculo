@@ -34,7 +34,6 @@ body{
 .cabecalho-imagem{
     width: 119px;
     border-radius: 50%;
-
 }
 
 .cabecalho-informacoes{
@@ -192,7 +191,11 @@ body{
         padding: 1em;
         margin: 0em;
     }
+.cabecalho-imagem{
+    width: 238px;
+    border-radius: 50%;
 
+}
     .cabecalho-titulo{
         font-size: 40px;
     }
