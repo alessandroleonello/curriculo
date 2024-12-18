@@ -191,6 +191,7 @@ body{
         padding: 1em;
         margin: 0em;
     }
+    
 .cabecalho-imagem{
     width: 238px;
     border-radius: 50%;
@@ -203,6 +204,11 @@ body{
     .cabecalho-informacoes{
         display: flex;
         flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecalho-itens__texto{
+                text-align: center;
     }
     
     .separador{
@@ -226,6 +232,8 @@ body{
 
         .tecnologia{
             text-align: center;
+            margin: 0;
+            padding:0;
         }
 
     .itens-formacao-texto{
@@ -265,6 +273,8 @@ body{
     .premiacoes{
         text-align: center;
         justify-content: center;
+        margin: 0;
+        padding: 0;
     }
 
 }
