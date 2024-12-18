@@ -194,7 +194,7 @@ body{
     }
 
     .cabecalho-titulo{
-        font-size: 24px;
+        font-size: 40px;
     }
 
     .cabecalho-informacoes{
@@ -226,7 +226,8 @@ body{
         }
 
     .itens-formacao-texto{
-margin: 0;    }
+        font-size: 20px;
+    }
 
     .itens-formacao{
         display: flex;
